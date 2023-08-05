@@ -1,6 +1,6 @@
 module instructions(input [4:0] address, output reg [31:0] instruction); //Uses Veda Memory
     reg [31:0] instruction_memory [31:0];
-    initial begin //these insstructions are in the order of the instructions in bubble_sort.asm MIPS code
+    initial begin //these instructions are in the order of the instructions in bubble_sort.asm MIPS code
         instruction_memory[0] = 32'b000110_01100_01111_00000_00000_000000; //sll 
         instruction_memory[1] = 32'b000000_10010_01111_01111_00000_000001; //add
         instruction_memory[2] = 32'b001001_01111_10000_00000_00000_000000; //lw
